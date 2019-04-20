@@ -1,0 +1,40 @@
+application: bleedingegg
+runtime: python27
+api_version: 1
+threadsafe: true
+
+env_variables:
+  SQL_USER: 'root'
+  SQL_PASS: 'otterpop'
+  SQL_SOCK: '/run/mysqld/mysqld.sock'
+  SQL_DB: 'decks'
+
+
+# [START handlers]
+handlers:
+
+- url: /font
+  static_dir: font
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /img
+  static_dir: img
+
+
+- url: /.*
+  script: main.app
+# [END handlers]
+
+
+libraries:
+- name: flask
+  version: 0.12
+
+- name: MySQLdb
+  version: 1.2.5
+
