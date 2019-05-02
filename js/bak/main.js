@@ -1,3 +1,5 @@
+var pages = [0];
+
 function
 tgwork
   ( lpge, foo )
@@ -163,6 +165,42 @@ tune
 
   dial(chn);
   tglsplat( svg, lvg );
+  pages.push(chn);
+  console.log("pages " + pages);
   lst.value = chn;
+  return;
+}
+
+
+function
+tnext()
+{
+  /* channel up one */
+
+  var nxt;
+  var lst  = document.getElementById('lstchn');
+  var lsv  = lst.value;
+  if( lsv ) {
+     nxt = +lsv + 1;
+  } else {
+     nxt = 0;
+  }
+
+  console.log("tuning next " + nxt );
+  tune(nxt);
+
+  return;
+}
+
+
+function
+tlast()
+{
+  /* channel last page */
+
+  var lst = +pages[pages.length-2];
+//  console.log("last page is " + lst);
+  tune(lst);
+
   return;
 }
