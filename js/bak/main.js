@@ -94,25 +94,24 @@ dial
    ( chn )
 {
   /* rotates dial knob 1 */
-  var deg = chn * 27;
-  var nob = document.getElementById('dial1');
-  var rgt = document.getElementById('furgt');
+  var deg  =  chn * 27;
+  var nob  =  document.getElementById('dial1');
+  var lst  =  document.getElementById('dial0');
+  var dgr  =  -(pages.length-1)*27;
 
   console.log("rotation " + deg + " degrees");
 
-    nob.style.webkitTransform = 'rotate('+deg+'deg)';
-    nob.style.mozTransform    = 'rotate('+deg+'deg)';
-    nob.style.msTransform     = 'rotate('+deg+'deg)';
-    nob.style.oTransform      = 'rotate('+deg+'deg)';
-    nob.style.transform       = 'rotate('+deg+'deg)';
+  nob.style.webkitTransform = 'rotate('+deg+'deg)';
+  nob.style.mozTransform    = 'rotate('+deg+'deg)';
+  nob.style.msTransform     = 'rotate('+deg+'deg)';
+  nob.style.oTransform      = 'rotate('+deg+'deg)';
+  nob.style.transform       = 'rotate('+deg+'deg)';
 
-
-
-//    rgt.style.webkitTransform = 'rotate('+deg+'deg)';
-//    rgt.style.mozTransform    = 'rotate('+deg+'deg)';
-//    rgt.style.msTransform     = 'rotate('+deg+'deg)';
-//    rgt.style.oTransform      = 'rotate('+deg+'deg)';
-//    rgt.style.transform       = 'rotate('+deg+'deg)';
+  lst.style.webkitTransform = 'rotate('+dgr+'deg)';
+  lst.style.mozTransform    = 'rotate('+dgr+'deg)';
+  lst.style.msTransform     = 'rotate('+dgr+'deg)';
+  lst.style.oTransform      = 'rotate('+dgr+'deg)';
+  lst.style.transform       = 'rotate('+dgr+'deg)';
 
 //    -ms-transform: rotate(20deg);
 //  -webkit-transform: rotate(20deg);
@@ -152,20 +151,22 @@ tune
   }
 
   if ( chn != lsv ) {
-  if ( chn > 0 && chn < 5 ) {
-     footfoo('work');
-  }
-  if ( chn > 4 && chn < 9 ) {
-     footfoo('about');
-  }
-  if ( chn > 8 ) {
-     footfoo('contact');
-  }
+
+     if ( chn > 0 && chn < 5 ) {
+       footfoo('work');
+     }
+     if ( chn > 4 && chn < 9 ) {
+       footfoo('about');
+     }
+     if ( chn > 8 ) {
+       footfoo('contact');
+     }
+
   }
 
-  dial(chn);
   tglsplat( svg, lvg );
   pages.push(chn);
+  dial(chn);
   console.log("pages " + pages);
   lst.value = chn;
   return;

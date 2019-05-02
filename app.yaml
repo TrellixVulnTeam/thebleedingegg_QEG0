@@ -5,7 +5,7 @@ threadsafe: true
 
 env_variables:
   SQL_USER: 'root'
-  SQL_PASS: 'otterpop'
+  SQL_PASS: 'password'
   SQL_SOCK: '/run/mysqld/mysqld.sock'
   SQL_DB: 'decks'
 

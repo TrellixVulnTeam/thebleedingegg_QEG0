@@ -254,35 +254,16 @@ hrgt{
 }
 
 
-/* article footer */
-fulft {
-  display:inline;
-  top: 5%;
-  left:5%;
-  width:6%;
-  height:95%;
-  position:absolute;
-}
 
 fumid{
   display:inline;
   left:0;
   width: 100%;
   height: 100%;
-/*  background-color:red; */
   position:absolute;
-/*  margin:auto; */
-}
-
-furgt {
-  display:inline;
-  top: 5%;
-  right:-20%;
-  width:6%;
-  height:90%;
-  position:absolute;
+  text-align:center;
+  font-size: 45px;
   margin:auto;
-  z-index:5;
 }
 
 
@@ -472,4 +453,13 @@ rgt {
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.phead {
+  padding-top:2%;
+/*  margin-top:55%;
+  top:55%; */
+  text-align:center;
+  font-family: 'renegade';
+  src: url('../font/renegado.ttf');
 }

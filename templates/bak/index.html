@@ -43,7 +43,7 @@
        viewBox="0 0 42.817062 40.85302"
        version="1.1"
        class="svg1">
-          <path id="svg1"  style="fill:#808000;stroke-width:0.08466666"      height="40mm" viewBox="0 0 42.817062 40.85302"></path>
+          <path id="svg1"  style="fill:#00ff00;stroke-width:0.08466666"      height="40mm" viewBox="0 0 42.817062 40.85302"></path>
        </svg>
        <chrm id="chrm" onclick="tune('1');"></chrm>
 
@@ -53,7 +53,7 @@
          version="1.1"
          class="svg2">
          <g transform="translate(0.41519428,0.13771797)">
-            <path id="svg2"  style="fill:#808000;stroke-width:0.08466666"></path>
+            <path id="svg2"  style="fill:#00ff00;stroke-width:0.08466666"></path>
          </g>
        </svg>
        <aeng id="aeng" onclick="tune('2');"></aeng>
@@ -64,7 +64,7 @@
          version="1.1"
          class="svg3">
          <g transform="translate(0.41519428,0.13771797)">
-            <path id="svg3"  style="fill:#808000;stroke-width:0.08466666"></path>
+            <path id="svg3"  style="fill:#00ff00;stroke-width:0.08466666"></path>
          </g>
        </svg>
        <peng id="peng" onclick="tune('3');"></peng>
@@ -75,7 +75,7 @@
          version="1.1"
          class="svg4">
          <g transform="translate(0.41519428,0.13771797)">
-            <path id="svg4" style="fill:#808000;stroke-width:0.08466666"></path>
+            <path id="svg4" style="fill:#00ff00;stroke-width:0.08466666"></path>
          </g>
        </svg>
        <wind id="wind" onclick="tune('4');"></wind>
@@ -91,7 +91,7 @@
        version="1.1"
        class="svg5">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg5" style="fill:#444444;stroke-width:0.08466666"></path>
+          <path id="svg5" style="fill:#b6b6b6;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <itree   id="itree"  onclick="tune('5');"></itree>
@@ -102,7 +102,7 @@
        version="1.1"
        class="svg6">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg6"  style="fill:#444444;stroke-width:0.08466666"></path>
+          <path id="svg6"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <iopen   id="iopen" onclick="tune('6');"></iopen>
@@ -113,7 +113,7 @@
        version="1.1"
        class="svg7">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg7"  style="fill:#444444;stroke-width:0.08466666"></path>
+          <path id="svg7"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <ilocale id="ilocale" onclick="tune('7');"></ilocale>
@@ -124,7 +124,7 @@
        version="1.1"
        class="svg8">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg8"  style="fill:#444444;stroke-width:0.08466666"></path>
+          <path id="svg8"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <ifuture id="ifuture" onclick="tune('8');"></ifuture>
@@ -141,7 +141,7 @@
        version="1.1"
        class="svg9">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg9"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
+          <path id="svg9"  style="fill:#808000;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <iinfo   id="iinfo" onclick="tune('9');"></iinfo>
@@ -152,7 +152,7 @@
        version="1.1"
        class="svg10">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg10"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
+          <path id="svg10"  style="fill:#808000;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <igithub id="igithub" onclick="tune('10');"></igithub>
@@ -163,7 +163,7 @@
        version="1.1"
        class="svg11">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg11"  style="fill:#b6b6b6;stroke-width:0.08466666";"></path>
+          <path id="svg11"  style="fill:#808000;stroke-width:0.08466666";"></path>
        </g>
        </svg>
        <igplus  id="igplus" onclick="tune('11');"></igplus>
@@ -174,7 +174,7 @@
        version="1.1"
        class="svg12">
        <g transform="translate(0.41519428,0.13771797)">
-          <path id="svg12"  style="fill:#b6b6b6;stroke-width:0.08466666"></path>
+          <path id="svg12"  style="fill:#808000;stroke-width:0.08466666"></path>
        </g>
        </svg>
        <istaff  id="istaff" onclick="tune('12');"></istaff>
@@ -200,9 +200,14 @@
 
   <afoot>
    <fumid>
-     <fulft><dial></dial></fulft>
-     <ledtv></ledtv>
-   <furgt><dial></dial></furgt>
+
+     <lft id="dial0" onclick="tlast();"></lft>
+     <mid>
+       <ledtv></ledtv>
+     </mid>
+     <rgt id="dial1" onclick="tnext();"></rgt>
+
+
    </fumid>
   </afoot>
 </div>

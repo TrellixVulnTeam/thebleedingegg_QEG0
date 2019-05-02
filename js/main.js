@@ -1,4 +1,6 @@
 var pages = [0];
+var titles = [ "Home", "Mozilla", "Webapps", "Linux", "Microsoft", "Curriculum", "Open Source", "Locale", "The Future", "Contact", "Github", "Google Plus", "Employment" ]
+
 
 function
 tgwork
@@ -167,7 +169,9 @@ tune
   tglsplat( svg, lvg );
   pages.push(chn);
   dial(chn);
-  console.log("pages " + pages);
+  //console.log("pages " + pages);
+  var ttl = titles[chn];
+  document.getElementById("phead").innerHTML = ttl;
   lst.value = chn;
   return;
 }
