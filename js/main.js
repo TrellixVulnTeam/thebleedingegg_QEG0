@@ -164,5 +164,27 @@ tune
   dial(chn);
   tglsplat( svg, lvg );
   lst.value = chn;
+
+  return;
+}
+
+
+function
+tnext()
+{
+  /* channel up one */
+
+  var nxt;
+  var lst  = document.getElementById('lstchn');
+  var lsv  = lst.value;
+  if( lsv ) {
+     nxt = +lsv + 1;
+  } else {
+     nxt = 0;
+  }
+
+  console.log("tuning next " + nxt );
+  tune(nxt);
+
   return;
 }

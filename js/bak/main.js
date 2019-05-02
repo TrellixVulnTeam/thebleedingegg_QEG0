@@ -59,24 +59,64 @@ footfoo
 
 
 function
-tglsplat( svg, lvg )
+tglsplat
+   ( svg, lvg )
 {
+  /* toggles selection splatter */
+
   console.log("setting stroke for " + svg );
+
   var stroke = svfz();
-  var p1  = document.getElementById( svg );
+  var p1     = document.getElementById( svg );
+
   p1.setAttribute("d", stroke);
+
   if ( svg == lvg ) return;
+
   if ( lvg ) {
+
      console.log("clearing " + lvg );
      var l1 = document.getElementById( lvg );
      l1.removeAttribute("d");
+
   } else {
      return
+
   }
   return;
-
 }
 
+
+function
+dial
+   ( chn )
+{
+  /* rotates dial knob 1 */
+  var deg = chn * 27;
+  var nob = document.getElementById('dial1');
+  var rgt = document.getElementById('furgt');
+
+  console.log("rotation " + deg + " degrees");
+
+    nob.style.webkitTransform = 'rotate('+deg+'deg)';
+    nob.style.mozTransform    = 'rotate('+deg+'deg)';
+    nob.style.msTransform     = 'rotate('+deg+'deg)';
+    nob.style.oTransform      = 'rotate('+deg+'deg)';
+    nob.style.transform       = 'rotate('+deg+'deg)';
+
+
+
+//    rgt.style.webkitTransform = 'rotate('+deg+'deg)';
+//    rgt.style.mozTransform    = 'rotate('+deg+'deg)';
+//    rgt.style.msTransform     = 'rotate('+deg+'deg)';
+//    rgt.style.oTransform      = 'rotate('+deg+'deg)';
+//    rgt.style.transform       = 'rotate('+deg+'deg)';
+
+//    -ms-transform: rotate(20deg);
+//  -webkit-transform: rotate(20deg);
+//  transform: rotate(20deg);
+
+}
 
 
 function
@@ -109,6 +149,19 @@ tune
      lobj.style.color            =  "#fff";
   }
 
+  if ( chn != lsv ) {
+  if ( chn > 0 && chn < 5 ) {
+     footfoo('work');
+  }
+  if ( chn > 4 && chn < 9 ) {
+     footfoo('about');
+  }
+  if ( chn > 8 ) {
+     footfoo('contact');
+  }
+  }
+
+  dial(chn);
   tglsplat( svg, lvg );
   lst.value = chn;
   return;

@@ -259,8 +259,8 @@ fulft {
   display:inline;
   top: 5%;
   left:5%;
-  width:6%;
-  height:95%;
+  width:8%;
+  height:90%;
   position:absolute;
 }
 
@@ -279,27 +279,25 @@ furgt {
   display:inline;
   top: 5%;
   right:-20%;
-  width:6%;
-  height:95%;
+  width:8%;
+  height:80%;
   position:absolute;
   margin:auto;
-  z-index:5;
 }
 
 
-dial {
-  width: 100%;
-  height: 100%;
+dial{
+  width: 80%;
+  height: 80%;
+  margin: 10%;
   background-image: url('../img/dial.svg');
   /*background-size: cover; */
-  background-size:100%;
+  background-size:80%;
   background-repeat: no-repeat;
-
   display:inline;
   position:absolute;
   z-index:5;
   overflow:hidden;
-
 /*  margin-top:15%;
   margin-left:15%; */
 
