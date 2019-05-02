@@ -1,0 +1,57 @@
+
+itree{
+  /* side bar chrome */
+  width: 75%;
+  height: 15%;
+  top: 15%;
+  left: 10%;
+  background-image: url('../img/about/treer.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+
+iopen{
+  /* side bar appengine */
+  width: 75%;
+  height: 15%;
+  top: 35%;
+  left: 10%;
+  background-image: url('../img/about/opensourcer.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+
+
+ilocale{
+  /* side bar linux */
+  width: 75%;
+  height: 15%;
+  top: 55%;
+  left: 10%;
+  background-image: url('../img/about/localer.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+
+}
+
+
+ifuture{
+  /* side bar windows */
+  width: 75%;
+  height: 15%;
+  top: 75%;
+  left: 10%;
+  background-image: url('../img/about/futurer.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+
+}
+

@@ -1,0 +1,94 @@
+splat1{
+/*  margin-right:10%; */
+  width:100%;
+  height:100%;
+  left: 0;
+  position:absolute;
+  z-index:2;
+}
+
+
+splat2{
+  width:100%;
+  height:100%;
+  left: 0%;
+  position:absolute;
+/*  z-index:2; */
+}
+
+splat3{
+  width:100%;
+  height:100%;
+  left: 0%;
+  position:absolute;
+/*  z-index:2; */
+}
+
+
+
+
+
+.svg1{
+  margin-top:40%;
+/*  margin-left:-15%; */
+}
+
+.svg2{
+  margin-top:-15%;
+}
+
+.svg3{
+  margin-top:-15%;
+}
+
+
+.svg4{
+  margin-top:-15%;
+}
+
+
+.svg5{
+  margin-top:35%;
+}
+
+.svg6{
+  margin-top:-15%;
+}
+
+.svg7{
+  margin-top:-15%;
+}
+
+
+.svg8{
+  margin-top:-15%;
+}
+
+
+.svg9{
+  margin-top:40%;
+}
+
+.svg10{
+  margin-top:-15%;
+}
+
+.svg11{
+  margin-top:-15%;
+}
+
+
+.svg12{
+  margin-top:-15%;
+}
+
+
+.svg0 {
+  width: 7%;
+  height: 100%;
+  left: 0;
+  margin-left: .75%;
+  position:absolute;
+  display:inline;
+  z-index:2;
+}

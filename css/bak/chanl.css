@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'digital';
+  src: url('../font/digital-7.ttf');
+}
+
+
+
+
+lcdbtn{
+  width: 45%;
+  height: 3%;
+
+
+  font-weight: bold;
+  font-family: 'digital';
+  src: url('../font/digital-7.ttf');
+  color:yellow;
+  text-align: center;
+  text-align: top;
+    line-height: 1;
+
+
+
+  right:0;
+  margin-right: 15%;
+  background-color:orange;
+
+  border-color:brown;
+  border-style: solid;
+  border-width: 0.25em;
+  /*  border-radius: 50px; */
+  border-radius: 4em;
+
+  position:absolute;
+ /*  display:fixed; */
+
+}
+
+}

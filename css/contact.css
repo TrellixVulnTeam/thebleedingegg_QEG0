@@ -1,0 +1,55 @@
+
+iinfo{
+  /* side bar chrome */
+  width: 75%;
+  height: 15%;
+  top: 15%;
+  left: 10%;
+  background-image: url('../img/contact/infor.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+
+igithub{
+  /* side bar appengine */
+  width: 75%;
+  height: 15%;
+  top: 35%;
+  left: 10%;
+  background-image: url('../img/contact/githubr.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+
+
+igplus{
+  /* side bar linux */
+  width: 75%;
+  height: 15%;
+  top: 55%;
+  left: 10%;
+  background-image: url('../img/contact/gplusr.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+
+
+istaff{
+  /* side bar windows */
+  width: 75%;
+  height: 15%;
+  top: 75%;
+  left: 10%;
+  background-image: url('../img/contact/staffr.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+  z-index:3;
+}
+

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'digital';
+  src: url('../font/digital-7.ttf');
+}
+
+
+
+
+lcdbtn {
+  width: 45%;
+  height: 3%;
+
+
+  font-weight: bold;
+  font-family: 'digital';
+  src: url('../font/digital-7.ttf');
+
+  color:#fff;
+  text-align: center;
+  text-align: top;
+  line-height: 1;
+
+  right:0;
+  margin-right: 15%;
+  background-color:#666;
+
+  border-color:#444;
+  border-style: solid;
+  border-width: 0.25em;
+
+  border-radius: 4em;
+
+  position:absolute;
+
+}
+
+lcdbtn:hover {
+  color:yellow;
+  background-color:orange;
+  border-color:brown;
+}
+
+
+lcdbtn:active {
+  color:yellow;
+  background-color:orange;
+  border-color:brown;
+}
+

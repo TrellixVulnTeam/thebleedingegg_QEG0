@@ -1,5 +1,6 @@
 body {
   background-color: #fff;
+  overflow:hidden;
 }
 
 @font-face {
@@ -127,11 +128,20 @@ argt {
 }
 
 .sidebar-left {
-  background-color: #444;
+/* background-color: #444; */
   height: 66%;
   width: 10%;
   margin-top: 8%;
   position: absolute;
+
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: #444;
+
+
+  background-color: #666;
+  background-image: linear-gradient(to bottom, #666, #444);
+
   border-radius: 0px 25px 50px 50px;
   z-index: 3;
 }
@@ -141,6 +151,9 @@ argt {
   right:0;
   top: 8%;
   height:83%;
+  width:7%;
+  line-height: 2.5;
+
   position: absolute;
   border-radius: 0px 0px 150px 0px;
   z-index:3;
@@ -222,7 +235,7 @@ argt {
 hmid{
   display:inline;
 /*  margin:auto; */
-  margin-left:37%;
+  margin-left:12.5%;
   potision:fixed;
   font-size: 45px;
   font-family: 'renegade';
@@ -244,14 +257,12 @@ hrgt{
 /* article footer */
 fulft {
   display:inline;
-  background-image: url('../img/dial.svg');
-  margin-top: 0.5%;
-  margin-left: 3%;
+  top: 0.5%;
+  left:-10%;
+  left: 0%;
   width:8%;
-  height:80%;
-  background-size: cover;
+  height:100%;
   position:absolute;
-  z-index:3;
 }
 
 fumid{
@@ -262,21 +273,38 @@ fumid{
   height: 100%;
 /*  background-color:red; */
   position:absolute;
-  z-index:3;
+  margin:auto;
 }
 
 furgt {
   display:inline;
-  background-image: url('../img/dial.svg');
-  right: 0;
-  margin-right:-1.5%;
-  margin-top: 0.5%;
-  float: right;
+  top: 0.5%;
+  right:-11.75%;
   width:8%;
-  height:80%;
-  background-size: cover;
+  height:100%;
   position:absolute;
-  z-index:3;
+  margin:auto;
+}
+
+
+dial{
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/dial.svg');
+  /*background-size: cover; */
+  background-size:100%;
+  background-repeat: no-repeat;
+  display:inline;
+  position:absolute;
+  z-index:5;
+  overflow:hidden;
+/*  margin-top:15%;
+  margin-left:15%; */
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 tcon{
@@ -312,17 +340,35 @@ led{
 }
 
 
+ledtv{
+  /* side bard led */
+  width: 25%;
+  height: 50%;
+  top: 15%;
+  left:36%;
+/*  left: 10%;
+/*  margin-left: 10%;
+  /*  background-color: red; */
+  background-image: url('../img/ledtv.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+
+  z-index:4;
+}
+
+
+
 chrm{
   /* side bar chrome */
   width: 75%;
   height: 15%;
   top: 15%;
   left: 10%;
-  background-image: url('../img/chrome.png');
+  background-image: url('../img/work/chrmr.png');
   background-size: 100% 100%;
   position: absolute;
   display: inline;
-/*  z-index:4; */
 }
 
 aeng{
@@ -331,11 +377,10 @@ aeng{
   height: 15%;
   top: 35%;
   left: 10%;
-  background-image: url('../img/appengine.png');
+  background-image: url('../img/work/appengr.png');
   background-size: 100% 100%;
   position: absolute;
   display: inline;
-/*  z-index:4; */
 }
 
 
@@ -345,11 +390,10 @@ peng{
   height: 15%;
   top: 55%;
   left: 10%;
-  background-image: url('../img/penguin.png');
+  background-image: url('../img/work/pengr.png');
   background-size: 100% 100%;
   position: absolute;
   display: inline;
-/*  z-index:4; */
 }
 
 
@@ -359,12 +403,24 @@ wind{
   height: 15%;
   top: 75%;
   left: 10%;
-  background-image: url('../img/windows.png');
+  background-image: url('../img/work/windr.png');
   background-size: 100% 100%;
   position: absolute;
   display: inline;
-/*  z-index:4; */
 }
+
+
+ttl{
+  /* title */
+  width: 75%;
+  height: 100%;
+  background-image: url('../img/title.png');
+  background-size: 100% 100%;
+  position: absolute;
+  display: inline;
+}
+
+
 
 .pad5{
   padding-top:5%;

@@ -1,6 +1,6 @@
 
-#git config --global user.email "you@example.com"
-#git config --global user.name "Your Name"
+git config --global user.email "fnord@localhost"
+git config --global user.name "Fnordian"
 
 git init
 git add --all
